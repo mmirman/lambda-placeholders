@@ -6,7 +6,7 @@
  UndecidableInstances,
  CPP
  #-}
-module Language.Placeholders
+module Language.LambdaPlaceholders
        ( CurryingApp(..)
        , UncurryingApp(..)
          -- * Example Usage
@@ -151,7 +151,7 @@ uncurried_foo = curried_foo.@.( , 3 , )
 @
 -- LANGUAGE TupleSections
 module Main where
-import Language.Placeholders
+import Language.LambdaPlaceholders
 
 foo (a,b,c,d,e) = a '+' b '+' c '+' d '*' c '+' e
 

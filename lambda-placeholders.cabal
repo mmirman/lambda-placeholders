@@ -1,4 +1,4 @@
-Name: placeholders
+Name: lambda-placeholders
 
 Version: 0.0.0.0
 
@@ -6,7 +6,7 @@ Synopsis:            A library to emulate laceholders similar to Scala.
 
 Description:         A description of the workings of placeholders in Scala can be found here: <http://www.artima.com/pins1ed/functions-and-closures.html#8.5>.
 
-Homepage:            https://github.com/mmirman/placeholders
+Homepage:            https://github.com/mmirman/lambda-placeholders
 
 License:             BSD3
 
@@ -21,10 +21,10 @@ cabal-version:       >=1.6
 
 source-repository head
   type:    git
-  location: git://github.com/mmirman/placeholders.git
+  location: git://github.com/mmirman/lambda-placeholders.git
 
 library
-  exposed-modules:     Language.Placeholders
+  exposed-modules:     Language.LambdaPlaceholders
   build-depends:       base >= 0.0
   hs-source-dirs:      src
   
