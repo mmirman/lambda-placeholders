@@ -1,7 +1,7 @@
-Placeholders
-============
+lambda-placeholders
+===================
 
-Placeholders is a Haskell library to emulate the placeholders feature of Scala. 
+lambda-placeholders is a Haskell library to emulate the placeholders feature of Scala. 
 
 Background
 ----------
