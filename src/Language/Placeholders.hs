@@ -60,7 +60,7 @@ CURRYING_INST((a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z))
 infixl 0 .@.
 
 class UncurryingApp a b e | b a -> e, e b -> a where
-  -- | @foo'.@.'arg@ curries @foo@ the correct amount and composes it with @arg@.
+  -- | @foo'.@.'arg@ composes @foo@ with @arg@.
   -- @arg@ must be of the form @a0 -> ... -> aN -> (z0,...,zN1, a0,z0,...zN1,a1,..., aN,z0,...,zNk)@
   -- and @foo@ must be of the form @z0-> ...-> zN1 -> a0 -> ... -> aN -> z0 -> ... -> zNk -> r@
   (.@.) :: a -> b -> e
