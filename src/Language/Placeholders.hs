@@ -14,7 +14,7 @@ class CurryingApp a b e | b a -> e, b e -> a where
   (.$.) :: a -> b -> e
  
 instance CurryingApp a d e => CurryingApp a (b -> d) (b -> e) where
-  (.$.) f g = \b -> f .$. g b
+  (.$.) f g b = f .$. g b
 
 #define CURRYING_INST(arg) \
 instance CurryingApp (arg -> a0) arg a0 where \
