@@ -104,6 +104,42 @@ instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l
 instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m) a0 where
   (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m) = foo a b c d e f g h i j k l m
 
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o) = foo a b c d e f g h i j k l m o
+
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> p -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p) = foo a b c d e f g h i j k l m o p
+
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> p -> q -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p, q) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q) = foo a b c d e f g h i j k l m o p q
+
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> p -> q -> r -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r) = foo a b c d e f g h i j k l m o p q r  
+
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> p -> q -> r -> s -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s) = foo a b c d e f g h i j k l m o p q r s
+
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> p -> q -> r -> s -> t -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t) = foo a b c d e f g h i j k l m o p q r s t
+
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> p -> q -> r -> s -> t -> u -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u) = foo a b c d e f g h i j k l m o p q r s t u
+
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> p -> q -> r -> s -> t -> u -> v -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u,v) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u,v) = foo a b c d e f g h i j k l m o p q r s t u v
+  
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> p -> q -> r -> s -> t -> u -> v -> w -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u,v,w) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u,v,w) = foo a b c d e f g h i j k l m o p q r s t u v w
+
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> p -> q -> r -> s -> t -> u -> v -> w -> x -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u,v,w,x) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u,v,w,x) = foo a b c d e f g h i j k l m o p q r s t u v w x
+
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> p -> q -> r -> s -> t -> u -> v -> w -> x -> y -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u,v,w,x,y) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u,v,w,x,y) = foo a b c d e f g h i j k l m o p q r s t u v w x y
+
+instance UncurryingApp (a -> b -> c -> d -> e -> f -> g -> h -> i -> j -> k -> l -> m -> o -> p -> q -> r -> s -> t -> u -> v -> w -> x -> y -> z -> a0) (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u,v,w,x,y,z) a0 where
+  (.@.) foo (a,b,c,d,e,f,g,h,i,j,k,l,m,o,p,q,r,s,t,u,v,w,x,y,z) = foo a b c d e f g h i j k l m o p q r s t u v w x y z 
+
 foo (a,b,c,d,e) = a + b + c + d * c + e
 
 curried_foo = foo.$.(2, , 3 , , )
