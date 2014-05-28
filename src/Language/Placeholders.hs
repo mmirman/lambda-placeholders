@@ -64,7 +64,7 @@ fiat = foo.$.(2, , )
 module Main where
 import Language.Placeholders
 
-foo (a,b,c) = a + b + c
+foo (a,b,c) = a '+' b '+' c
 
 curried_foo = foo'.$.'(2, , )
 

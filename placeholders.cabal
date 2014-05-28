@@ -2,9 +2,9 @@ Name: placeholders
 
 Version: 0.0.0.0
 
-Description:         A library to emulate placeholders similar to Scala.
+Synopsis:            A library to emulate laceholders similar to Scala.
 
-Synopsis:            A description of the workings of placeholders in Scala can be found at http://www.artima.com/pins1ed/functions-and-closures.html#8.5
+Description:         A description of the workings of placeholders in Scala can be found here: <http://www.artima.com/pins1ed/functions-and-closures.html#8.5>.
 
 Homepage:            https://github.com/mmirman/placeholders
 

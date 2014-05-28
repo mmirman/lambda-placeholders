@@ -6,10 +6,10 @@ Placeholders is a Haskell library to emulate the placeholders feature of Scala.
 Background
 ----------
 
-* Placeholders in Scala act similar to those used in category theory.  
-* Rather than create a lambda or name a function, an underscore is used in place of a parameter 
-and the function is abstracted over that location.
+* Placeholders in Scala act similar to those used in category theory.
+* Rather than create a lambda or name a function, an underscore is used in place of a parameter and the function is abstracted over that location.
 * This placeholders library doesn't use underscores, rather it leverages similar capabilities found in TupleSections.
+* A description of Scala placeholders [can be found here](http://www.artima.com/pins1ed/functions-and-closures.html#8.5).  
 
 Example
 -------
