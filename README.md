@@ -21,10 +21,8 @@ Example
 module Main where 
 import Language.Placeholders
 
-foo :: (Integer , Integer, Integer) -> Integer
 foo (a,b,c) = a + b + c
 
-curried_foo :: Integer -> Integer -> Integer
 curried_foo = foo.$.(2, , )
 
 main = do
