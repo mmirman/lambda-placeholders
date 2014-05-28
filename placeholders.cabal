@@ -1,0 +1,36 @@
+Name: placeholders
+
+Version: 0.0.0.0
+
+Description:         A library to emulate placeholders similar to Scala.
+
+Synopsis:            A description of the workings of placeholders in Scala can be found at http://www.artima.com/pins1ed/functions-and-closures.html#8.5
+
+Homepage:            https://github.com/mmirman/placeholders
+
+License:             BSD3
+
+License-file:        LICENSE
+
+Author:              Matthew Mirman
+
+category:            Language
+build-type:          Simple
+cabal-version:       >=1.6
+
+source-repository head
+  type:    git
+  location: git://github.com/mmirman/placeholders.git
+
+library
+  exposed-modules:     Language.Placeholders
+  build-depends:       base >= 2.0 && < 6.0
+  hs-source-dirs:      src
+  
+  ghc-options: -O2 -optc-O3
+
+  extensions:  MultiParamTypeClasses,
+               FlexibleInstances,
+               FunctionalDependencies,
+               UndecidableInstances,
+               TupleSections
