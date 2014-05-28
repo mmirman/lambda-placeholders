@@ -6,11 +6,18 @@
  UndecidableInstances,
  CPP
  #-}
-module Language.Placeholders (CurryingApp(..)) where
+module Language.Placeholders
+       ( CurryingApp(..)
+         -- * Example Usage
+         -- $simpleExample
+       ) where
 
 infixr 0 .$.
 
 class CurryingApp a b e | b a -> e, b e -> a where
+  -- | @foo'.$.'arg@ curries @foo@ the correct amount and composes it with @arg@.
+  -- @arg@ must be of the form @a0 -> ... -> aN -> (z0,...,zN1, a0,z0,...zN1,a1,..., aN,z0,...,zNk)@
+  -- '.$.' has the same fixity as '$'.
   (.$.) :: a -> b -> e
  
 instance CurryingApp a d e => CurryingApp a (b -> d) (b -> e) where
@@ -49,3 +56,19 @@ CURRYING_INST((a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z))
 
 foo (a,b,c) = a + b + c
 fiat = foo.$.(2, , )
+
+{- $simpleExample
+
+@
+-- LANGUAGE TupleSections
+module Main where
+import Language.Placeholders
+
+foo (a,b,c) = a + b + c
+
+curried_foo = foo'.$.'(2, , )
+
+main = do
+    'putStrLn' '$' 'show' '$' curried_foo 4 5
+@
+-}
