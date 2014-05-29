@@ -27,7 +27,7 @@ source-repository head
 
 library
   exposed-modules:     Language.LambdaPlaceholders
-  build-depends:       base >= 0.0
+  build-depends:       base >= 0 && <= 7
   hs-source-dirs:      src
   
   ghc-options: -O2 -optc-O3
