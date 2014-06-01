@@ -19,7 +19,7 @@ Example
  TupleSections 
  #-}
 module Main where 
-import Language.Placeholders
+import Language.LambdaPlaceholders
 
 foo (a,b,c) = a + b + c
 
